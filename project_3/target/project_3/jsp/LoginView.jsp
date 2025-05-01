@@ -22,7 +22,6 @@
 	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 	crossorigin="anonymous"></script>
 
-
 <style type="text/css">
 .log1 {
 	padding-top: 5%;
@@ -48,14 +47,12 @@ i.css {
 .p4 {
 	background-image: url('<%=ORSView.APP_CONTEXT%>/img/loginhere.jpg');
 	background-repeat: no-repeat;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 	background-size: cover;
 	padding-top: 75px;
-/*background-position: center top;*/
-	
+	/*background-position: center top;*/
 }
 </style>
-
 
 </head>
 <body class="p4">
@@ -74,7 +71,9 @@ i.css {
 					<div class="card input-group-addon grad	">
 						<div class="card-body">
 
-							<h3 class="text-center text-dark"><b>Login</b></h3>
+							<h3 class="text-center text-dark">
+								<b>Login</b>
+							</h3>
 							<!--Body-->
 							<div>
 
@@ -168,8 +167,8 @@ i.css {
 							</div>
 							<div class="text-center">
 								<a href="<%=ORSView.FORGET_PASSWORD_CTL%>"
-									style="color: black; font-size: 15px;"><b><u>Forget my
-										password ?</b></u></a>
+									style="color: black; font-size: 15px;"><b><u>Forget
+											my password ?</b></u></a>
 							</div>
 							<input type="hidden" name="uri" value="<%=uri%>">
 						</div>
@@ -177,13 +176,9 @@ i.css {
 				</div>
 				<div class="col-md-4 mb-4"></div>
 			</div>
-
 		</form>
 		</main>
-
-
 	</div>
-
 </body>
 <%@include file="FooterView.jsp"%>
 </html>
