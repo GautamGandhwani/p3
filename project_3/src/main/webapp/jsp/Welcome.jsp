@@ -9,7 +9,7 @@
 <style>
 .p4 {
 	background-image:
-		url('<%=ORSView.APP_CONTEXT%>/img/WallpaperDog-988052.jpg');
+		url('<%=ORSView.APP_CONTEXT%>/img/custom-welcom.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }

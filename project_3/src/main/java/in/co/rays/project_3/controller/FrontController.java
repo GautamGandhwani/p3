@@ -46,10 +46,4 @@ public class FrontController implements Filter {
 
 	public void destroy() {
 	}
-
 }
-
-
-
-
-

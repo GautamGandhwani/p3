@@ -16,7 +16,6 @@ public interface ORSView {
 	public String ERROR_VIEW = PAGE_FOLDER + "/ErrorView404.jsp";
 
 	public String MARKSHEET_VIEW = PAGE_FOLDER + "/MarksheetView.jsp";
-
 	public String MARKSHEET_LIST_VIEW = PAGE_FOLDER + "/MarksheetListView.jsp";
 	public String GET_MARKSHEET_VIEW = PAGE_FOLDER + "/GetMarksheetView.jsp";
 	public String USER_VIEW = PAGE_FOLDER + "/UserView.jsp";
@@ -45,7 +44,6 @@ public interface ORSView {
 	public String SUBJECT_LIST_VIEW = PAGE_FOLDER + "/SubjectListView.jsp";
 	public String PRODUCT_VIEW = PAGE_FOLDER + "/ProductView.jsp";
 	public String PRODUCT_LIST_VIEW = PAGE_FOLDER + "/ProductListView.jsp";
-
 
 	public String ERROR_CTL = APP_CONTEXT + "/ErrorCtl";
 

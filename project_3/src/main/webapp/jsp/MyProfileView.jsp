@@ -25,7 +25,7 @@ i.css {
 }
 
 .hm {
-	background-image: url('<%=ORSView.APP_CONTEXT%>/img/profile.jpg');
+	background-image: url('<%=ORSView.APP_CONTEXT%>/img/pencils.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -200,10 +200,8 @@ i.css {
 									</div>
 								</div>
 								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("dob", request)%></font></br>
-
 								</br>
 								<div class="text-center">
-
 									<input type="submit" name="operation"
 										class="btn btn-success btn-md" style="font-size: 17px"
 										value="<%=MyProfileCtl.OP_SAVE%>"> <input
@@ -211,20 +209,15 @@ i.css {
 										style="font-size: 17px"
 										value="<%=MyProfileCtl.OP_CHANGE_MY_PASSWORD%>">
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 mb-4"></div>
 			</div>
-
 		</form>
 		</main>
-
-
 	</div>
-
 </body>
 <%@include file="FooterView.jsp"%>
 </html>

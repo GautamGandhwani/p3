@@ -115,7 +115,7 @@ i.css {
 							<div class="md-form">
 
 								<span class="pl-sm-5"><b>First Name</b> <span
-									style="color: red;">*</span></span> </br>
+									style="color: red;">*</span></span> <br>
 								<div class="col-sm-12">
 									<div class="input-group">
 										<div class="input-group-prepend">
@@ -128,10 +128,10 @@ i.css {
 											value="<%=DataUtility.getStringData(dto.getFirstName())%>">
 									</div>
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("firstName", request)%></font></br>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("firstName", request)%></font><br>
 
 								<span class="pl-sm-5"><b>Last Name</b> <span
-									style="color: red;">*</span></span></br>
+									style="color: red;">*</span></span><br>
 								<div class="col-sm-12">
 									<div class="input-group">
 										<div class="input-group-prepend">
@@ -145,7 +145,7 @@ i.css {
 											value="<%=DataUtility.getStringData(dto.getLastName())%>">
 									</div>
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("lastName", request)%></font></br>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("lastName", request)%></font><br>
 
 								<%
 									if (dto.getFirstName() != null && id > 0) {
@@ -158,7 +158,7 @@ i.css {
 									} else {
 								%>
 								<span class="pl-sm-5"><b>Password</b> <span
-									style="color: red;">*</span></span> </br>
+									style="color: red;">*</span></span> <br>
 								<div class="col-sm-12">
 									<div class="input-group">
 										<div class="input-group-prepend">
@@ -171,10 +171,10 @@ i.css {
 											value="<%=DataUtility.getStringData(dto.getPassword())%>">
 									</div>
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("password", request)%></font></br>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("password", request)%></font><br>
 
 								<span class="pl-sm-5"><b>Confirm Password</b> <span
-									style="color: red;">*</span></span> </br>
+									style="color: red;">*</span></span> <br>
 								<div class="col-sm-12">
 									<div class="input-group">
 										<div class="input-group-prepend">
@@ -187,12 +187,12 @@ i.css {
 											value="<%=DataUtility.getStringData(dto.getConfirmPassword())%>">
 									</div>
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("confirmPassword", request)%></font></br>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("confirmPassword", request)%></font><br>
 								<%
 									}
 								%>
 								<span class="pl-sm-5"><b>Email Id</b> <span
-									style="color: red;">*</span></span> </br>
+									style="color: red;">*</span></span> <br>
 								<div class="col-sm-12">
 									<div class="input-group">
 										<div class="input-group-prepend">
@@ -205,10 +205,10 @@ i.css {
 											value="<%=DataUtility.getStringData(dto.getLogin())%>">
 									</div>
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("emailId", request)%></font></br>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("emailId", request)%></font><br>
 
 								<span class="pl-sm-5"><b>Mobile No</b> <span
-									style="color: red;">*</span></span> </br>
+									style="color: red;">*</span></span> <br>
 								<div class="col-sm-12">
 									<div class="input-group">
 										<div class="input-group-prepend">
@@ -222,7 +222,7 @@ i.css {
 											value="<%=DataUtility.getStringData(dto.getMobileNo())%>">
 									</div>
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("mobileNo", request)%></font></br>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("mobileNo", request)%></font><br>
 
 								<span class="pl-sm-5"><b>Role</b><span
 									style="color: red;">*</span></span></br>
@@ -236,10 +236,10 @@ i.css {
 										<%=HTMLUtility.getList("role", String.valueOf(dto.getRoleId()), list)%>
 									</div>
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("role", request)%></font></br>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("role", request)%></font><br>
 
 								<span class="pl-sm-5"><b>Gender</b><span
-									style="color: red;">*</span></span> </br>
+									style="color: red;">*</span></span> <br>
 
 								<div class="col-sm-12">
 									<div class="input-group">
@@ -260,10 +260,10 @@ i.css {
 										<%=htmlList%></div>
 
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("gender", request)%></font></br>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("gender", request)%></font><br>
 
 								<span class="pl-sm-5"><b>DOB</b> <span
-									style="color: red;">*</span></span></br>
+									style="color: red;">*</span></span><br>
 								<div class="col-sm-12">
 									<div class="input-group">
 										<div class="input-group-prepend">
@@ -277,7 +277,7 @@ i.css {
 											value="<%=DataUtility.getDateString(dto.getDob())%>">
 									</div>
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("dob", request)%></font></br>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("dob", request)%></font><br>
 								<%
 									if (dto.getFirstName() != null) {
 								%>
@@ -307,11 +307,13 @@ i.css {
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
 		</form>
 		</main>
 		<div class="col-md-4 mb-4"></div>
 	</div>
-<%@include file="FooterView.jsp"%>
+	<%@include file="FooterView.jsp"%>
 
 </body>
 </html>

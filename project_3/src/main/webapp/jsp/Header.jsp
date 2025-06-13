@@ -15,8 +15,6 @@
 	href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 	integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
 	crossorigin="anonymous">
-
-
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <script
@@ -76,7 +74,8 @@
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<li><a class="dropdown-item"
 							href="<%=ORSView.MARKSHEET_MERIT_LIST_CTL%>"><i
-								class="fa fa-file-alt"></i>Marksheet Merit List</a>
+								class="fa fa-file-alt"></i><font style="color: white;">Marksheet
+									Merit List</font></a>
 					</div></li>
 
 				<li class="nav-item dropdown"><a
@@ -86,10 +85,11 @@
 				</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<li><a class="dropdown-item"
-							href="<%=ORSView.MY_PROFILE_CTL%>"><i class="fa fa-user-tie"></i>My
-								Profile</a> <a class="dropdown-item"
+							href="<%=ORSView.MY_PROFILE_CTL%>"><i class="fa fa-user-tie"></i><font
+								style="color: white;">My Profile</font></a> <a class="dropdown-item"
 							href="<%=ORSView.CHANGE_PASSWORD_CTL%>"><i
-								class=" fa fa-file-alt"></i>Change Password</a>
+								class=" fa fa-file-alt"></i><font style="color: white;">Change
+									Password</font></a>
 					</div></li>
 				<%
 					} else if (userDto.getRoleId() == RoleDTO.ADMIN) {
@@ -206,7 +206,7 @@
 						</a>
 					</div></li>
 
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<%-- <li class="nav-item dropdown" style="padding-left: 5px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Product
@@ -218,7 +218,7 @@
 							class="fa fa-file"></i>Add Product</a> <a class="dropdown-item"
 							href="<%=ORSView.PRODUCT_LIST_CTL%>"><i class="fa fa-paste"></i>Product
 							List</a>
-					</div></li>
+					</div></li> --%>
 
 				<%
 					}
@@ -248,9 +248,9 @@
 							} else {
 						%>
 						<a class="dropdown-item" href="<%=ORSView.LOGIN_CTL%>"><i
-							class="fa fa-sign-in-alt">Login</i> <a class="dropdown-item"
+							class="fa fa-sign-in-alt">Login</i> </a><a class="dropdown-item"
 							href="<%=ORSView.USER_REGISTRATION_CTL%>"><i
-								class="fa fa-registered"></i> User Registration</a>
+							class="fa fa-registered"></i> User Registration</a>
 					</div></li>
 				<%
 					}
