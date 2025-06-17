@@ -16,10 +16,6 @@
 		</repository>
 	</repositories>
 
-
-
-
-
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -114,23 +110,6 @@
 
 	</dependencies>
 	<build>
-
-		<plugins>
-			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.3.1</version>
-				<configuration>
-					<packagingExcludes>
-						WEB-INF/lib/unwanted-library.jar,
-						**/*.log,
-						**/*.csv,
-						**/test/**,
-						**/docs/**
-					</packagingExcludes>
-				</configuration>
-			</plugin>
-		</plugins>
-
 		<finalName>project_3</finalName>
 	</build>
 

@@ -25,7 +25,7 @@
         <property name="java-output-path" value="/project_3/target/classes"/>
                 
         <property name="context-root" value="project_3"/>
-        <property name="component.exclusion.patterns" value="WEB-INF/lib/unwanted-library.jar,**/*.log,**/*.csv,**/test/**,**/docs/**"/>
+        <property name="component.exclusion.patterns"/>
                             
     
     
