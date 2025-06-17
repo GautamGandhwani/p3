@@ -17,6 +17,9 @@
 	</repositories>
 
 
+
+
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -90,7 +93,7 @@
 		<!-- <dependency> <groupId>net.sf.jasperreports</groupId> <artifactId>jasperreports</artifactId> 
 			<version>6.13.0</version> </dependency> <dependency> <groupId>com.lowagie</groupId> 
 			<artifactId>itext</artifactId> <version>2.1.7.js7</version> </dependency> -->
-		
+
 		<dependency>
 			<groupId>com.lowagie</groupId>
 			<artifactId>itext</artifactId>
@@ -111,6 +114,23 @@
 
 	</dependencies>
 	<build>
+
+		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<packagingExcludes>
+						WEB-INF/lib/unwanted-library.jar,
+						**/*.log,
+						**/*.csv,
+						**/test/**,
+						**/docs/**
+					</packagingExcludes>
+				</configuration>
+			</plugin>
+		</plugins>
+
 		<finalName>project_3</finalName>
 	</build>
 
